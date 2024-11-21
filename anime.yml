@@ -1,0 +1,26 @@
+collections:
+  MyAnimeList Most Popular:
+    mal_list: most_popular_5
+  MyAnimeList Top Rated:
+    mal_list: top_rated_5
+  MyAnimeList Trending:
+    mal_list: trending_5
+  AniList Most Popular:
+    anilist_list: most_popular_5
+  AniList Top Rated:
+    anilist_list: top_rated_5
+  AniList Trending:
+    anilist_list: trending_5
+
+overlays:
+  reapply_overlays: true
+  pmm: status
+    template_variables:
+      font_size: 75
+      font: config/fonts/Juventus-Fans-Bold-1.ttf
+      back_color: '#262626'
+      back_width: 1920
+      back_height: 125
+      horizontal_align: center
+      vertical_align: top
+      vertical_offset: 0
