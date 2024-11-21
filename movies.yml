@@ -1,0 +1,30 @@
+collections:
+  IMDB Top 250:
+    imdb_list: top_250_movies
+  IMDB Lowest 100:
+    imdb_list: lowest_rated_100_movies
+  IMDB Top 25 Popular:
+    imdb_list: most_popular_movies
+  Year Top 25:
+    filters:
+      - year: recent_25
+  Seasonal:
+    seasonal_filters:
+      - exclude: [latinx, women, lgbtq, black_history, disabilities, aapi]
+  Oscars:
+    oscar_winners:
+      best_director: 35
+      best_picture: 35
+      all_categories: 35
+  Cannes:
+    cannes_winners: 35
+  Sundance:
+    sundance_winners: 35
+
+overlays:
+  reapply_overlays: true
+  pmm: languages
+    template_variables:
+      horizontal_align: left
+      vertical_align: bottom
+      vertical_offset: 0
