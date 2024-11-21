@@ -53,7 +53,7 @@ libraries:
   TV:
     plex:
       url: http://192.168.1.11:32400
-      token: SeXYVFk1XooCAs8pYWbc
+      token: Placeholder
       timeout: 60
       clean_bundles: true
       empty_trash: true
@@ -63,7 +63,7 @@ libraries:
   Movies:
     plex:
       url: http://192.168.1.11:32400
-      token: SeXYVFk1XooCAs8pYWbc
+      token: Placeholder
       timeout: 60
       clean_bundles: true
       empty_trash: true
@@ -73,7 +73,7 @@ libraries:
   Anime:
     plex:
       url: http://192.168.1.11:32400
-      token: SeXYVFk1XooCAs8pYWbc
+      token: Placeholder
       timeout: 60
       clean_bundles: true
       empty_trash: true
@@ -81,16 +81,16 @@ libraries:
       db_cache: 4096
       verify_ssl: false
 tmdb:
-  apikey: d73f566cb3db023b2daddd906b595bd3
+  apikey: Placeholder
   language: en
   cache_expiration: 60
   region:
 tautulli:
   url: https://tautulli.svendrive.com
-  apikey: 592858a687b8467987b42e0ba2c86343
+  apikey: Placeholder
 radarr:
   url: https://radarr.svendrive.com
-  token: 9b68ef0dbe3e447bb833bafaa3bd3531
+  token: Placeholder
   version: v3
   add_missing: true
   root_folder_path: /Data/plex/movies
@@ -107,7 +107,7 @@ radarr:
   monitor_existing: false
 sonarr:
   url: https://sonarr.svendrive.com
-  token: b3caae4636864ebe96b99bfa7100a816
+  token: Placeholder
   version: v4
   add_missing: true
   root_folder_path: /Data/plex/shows
@@ -138,24 +138,24 @@ sonarr:
     ignore_cache: false
 
 mal:
-  client_id: b219fbf4b4a849aa9ef0bfda358296b8
-  client_secret: e31e4d589d9e4a87852986ae801dc2f83ffdae67ac124b0422e4c05c6b7a55c0
-  localhost_url: http://localhost/?code=def5020076017c566e00c2bd22451f0fe144951d55e83a46cf00e42c8951938ff4b76be3b276ce72e194957eea9d2eba92b52ad23a203ed7f45a8fc2e593e05693781dde31196017d367664c3aeb9d6157df5f17bfe4daf3019eb0400c1cecdb30d1d9923f7f1bd34f73cba8975508bc414b948eb6de5b0e4b4bb93b3c4ae10698bf402268a59435af702ebb92bf133cefc44e9705c992c3aede8c9c8c1283543ddc0747189bcd6f2f57d088a811c57fcc0fb2a3f7098aa8f6c0cf8107dc4320aa73cff37134e89621f3205b85c2af58280527d3a274e50f8b5725d1e551a5e8869a1d9d76370cbeaf685d0336ff5bc7480a331ccc5cc443e9fd5beb522d3e9a9b5850e7e1f58ec5da0c4abf9a5e869c57cbaeebd5e3125a50622d2ab7e621f32e9a184239a7cbe0556e6c50e8e61f1972a5fedf740a0f6063bcd3f75c664347388e09234501db994a7663ac165f5aa5d21a6a5ea8ea887dea30bb61f8bbee1080c31a0503babefb5dd497de8600f78f9fb1a8ecd1d25ee4f6848d11806e3d7a0c68579baa8239e05cba8c22616c3fbb9f4dbb56bb7e1e4abdebadbc538c845a6b88e7b965c7cbb6aa0d20bb569161442c547ab6ab2f8b3a203932279445d955a58a60664b7fd8cdb494f3c544ae19e05d9ed2da1b16f88933148456f26f471f3b5975b821af853bda
+  client_id: Placeholder
+  client_secret: Placeholder
+  localhost_url: Placeholder
   authorization:
     access_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjZjNDVjZjlhNTY1YWNjYTMxYjAyYTEzNDYwOWFlMWE1OGVmMTNjNGMzMTZjOTc3OTFiNzFjZmU3MDU4MzIyNDg4MmRmMWZhZWY0ZDQzNjlmIn0.eyJhdWQiOiJiMjE5ZmJmNGI0YTg0OWFhOWVmMGJmZGEzNTgyOTZiOCIsImp0aSI6IjZjNDVjZjlhNTY1YWNjYTMxYjAyYTEzNDYwOWFlMWE1OGVmMTNjNGMzMTZjOTc3OTFiNzFjZmU3MDU4MzIyNDg4MmRmMWZhZWY0ZDQzNjlmIiwiaWF0IjoxNzI5NTg3NjQ5LCJuYmYiOjE3Mjk1ODc2NDksImV4cCI6MTczMjI2OTY0OSwic3ViIjoiNzQzNDcyOSIsInNjb3BlcyI6W119.P0qdVBRI-g4VpG8KlEp-THQuCfY3_R9nmJ3rfn0D-__WWvHmuppgFb00IjeKg4FlW4t0jBQWazM1kiJZNa2Lg8H3JKBurZAe75RUVq4g98JrZXj_BQarr3yAmN4OKabFMtspvkLfAtdDq8uQqVMXG_NQZuJqioitMU3yRZo1WGkDAK9ziAZencCzkr4tvW3TN6_Q6GWhbqr8ct-ErqSxPng5PPNfV5YXGrsh1Yiid3ekKS5zECr2O0f8krKHfZNy7a0lXzBvWJ5-CUT-_tJIwTqcvaPG5ldYZ2f7GmaxA3Osx5cI4a4Cw_zLBOVmfN6ixza1emsRuevTTKWpI_I4pw
     token_type: Bearer
     expires_in: 2682000
-    refresh_token: def502009707703794a7fb49ab9ef0a8f9dd69aece0f5efc89000afa089de6fe78df9039c7293ce51aafb31d4a6a7f8b8633e50580bea2f2bb54153cfce4615f03ac475c8c4f704143585b96392a94841d640282e868c95cdf72e0e2d0504fc746e008d0393514c451443e8570acc2244adcd0b8c54981af99e823bf8c014c5460fde78ca1f254421ece45e14e2d1be5c038a6ae466bc074037f4d92a04b02a2f4479a725ac54ee098d7d3033b81c8ee7dea116705a86252985fda3929e57c28d2aadb4ba7fe720a5d9827e09b4fcafea5eb5fa81122e9c5e1e3e810be32b647b09b3bc47a97cf1d855bd319d67d2b156bbcb2adcb527531df399a40363e3aaa32f09ef65a6267395075ec824d103b1b3c9fa95a9869e4b50017619287062f153fd52f1f8ef318c9fa0d6594cc30bf7fff991e1b351cb1854b578b11f0366ce89c34eb8367d309ab20b9f2a2b98ea26f04e76901517fce22706e4e9411548cdd2e31c7cf93a0e86231a39a7d77ce82d6b5eb06f09de3b706fd15ad8e983f8f74b7341ec87f1b9168
+    refresh_token: Placeholder
   cache_expiration: 60
 trakt:
-  client_id: f89b4c6ac9b6bd2edcbc0bae1dc9038b4ef1f48d13d6f39c8993f35e5e1c459e
-  client_secret: a5df6e9465efe29a3b8b696fb0693171b7e89de3f8e81c5c30c7ee4b7512df5f
+  client_id: Placeholder
+  client_secret: Placeholder
 # Everything below this line is automatically generated
   authorization:
-    access_token: 624feba7dc542ad49183ab108a65b4d12e94d337160be454e91df9eb309538f5
+    access_token: Placeholder
     token_type: Bearer
     expires_in: 7889238
-    refresh_token: a20dbbc7b728a5371bdcaf84e949576cc8a462f0dec1f3e24668019459d29a20
+    refresh_token: Placeholder
     scope: public
     created_at: 1732183221
   upgrade_existing: true
