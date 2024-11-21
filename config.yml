@@ -86,10 +86,10 @@ tmdb:
   cache_expiration: 60
   region:
 tautulli:
-  url: https://tautulli.svendrive.com
+  url: http://192.168.1.50:1123/
   apikey: Placeholder
 radarr:
-  url: https://radarr.svendrive.com
+  url: http://192.168.1.50:1119/
   token: Placeholder
   version: v3
   add_missing: true
@@ -106,7 +106,7 @@ radarr:
   ignore_cache: false
   monitor_existing: false
 sonarr:
-  url: https://sonarr.svendrive.com
+  url: http://192.168.1.50:1121/
   token: Placeholder
   version: v4
   add_missing: true
@@ -142,7 +142,7 @@ mal:
   client_secret: Placeholder
   localhost_url: Placeholder
   authorization:
-    access_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjZjNDVjZjlhNTY1YWNjYTMxYjAyYTEzNDYwOWFlMWE1OGVmMTNjNGMzMTZjOTc3OTFiNzFjZmU3MDU4MzIyNDg4MmRmMWZhZWY0ZDQzNjlmIn0.eyJhdWQiOiJiMjE5ZmJmNGI0YTg0OWFhOWVmMGJmZGEzNTgyOTZiOCIsImp0aSI6IjZjNDVjZjlhNTY1YWNjYTMxYjAyYTEzNDYwOWFlMWE1OGVmMTNjNGMzMTZjOTc3OTFiNzFjZmU3MDU4MzIyNDg4MmRmMWZhZWY0ZDQzNjlmIiwiaWF0IjoxNzI5NTg3NjQ5LCJuYmYiOjE3Mjk1ODc2NDksImV4cCI6MTczMjI2OTY0OSwic3ViIjoiNzQzNDcyOSIsInNjb3BlcyI6W119.P0qdVBRI-g4VpG8KlEp-THQuCfY3_R9nmJ3rfn0D-__WWvHmuppgFb00IjeKg4FlW4t0jBQWazM1kiJZNa2Lg8H3JKBurZAe75RUVq4g98JrZXj_BQarr3yAmN4OKabFMtspvkLfAtdDq8uQqVMXG_NQZuJqioitMU3yRZo1WGkDAK9ziAZencCzkr4tvW3TN6_Q6GWhbqr8ct-ErqSxPng5PPNfV5YXGrsh1Yiid3ekKS5zECr2O0f8krKHfZNy7a0lXzBvWJ5-CUT-_tJIwTqcvaPG5ldYZ2f7GmaxA3Osx5cI4a4Cw_zLBOVmfN6ixza1emsRuevTTKWpI_I4pw
+    access_token: Placeholder
     token_type: Bearer
     expires_in: 2682000
     refresh_token: Placeholder
