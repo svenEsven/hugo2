@@ -1,10 +1,25 @@
-include:
-  - movies.yml
-  - anime.yml
-  - shows.yml
-
-settings:
-  cache: false
+libraries:              # Library mappings must have a colon (:) placed after them
+  Movies:
+    metadata_path:
+    - file: config/Movies.yml
+  TV:
+    metadata_path:
+    - file: config/shows.yml
+    sonarr:
+      root_folder_path: /Data/plex/shows
+      quality_profile: WEB-1080p
+      series_type: standard
+      tag: series
+  Anime:
+    metadata_path:
+    - file: config/anime.yml
+    sonarr:
+      root_folder_path: /Data/plex/shows
+      quality_profile: Remux-1080p - Anime
+      series_type: anime
+      tag: anime
+settings:                  # Can be individually specified per library as well
+  cache: true
   cache_expiration: 60
   asset_directory: config/assets
   asset_folders: true
@@ -18,144 +33,107 @@ settings:
   show_asset_not_needed: true
   sync_mode: sync
   minimum_items: 1
-  default_collection_order: title.asc
-  delete_below_minimum: true
-  delete_not_scheduled: false
+  default_collection_order:
   run_again_delay: 2
   missing_only_released: false
   only_filter_missing: false
+  delete_below_minimum: true
+  delete_not_scheduled: false
   show_unmanaged: true
+  show_unconfigured: true
   show_filtered: false
-  show_options: false
+  show_options: true
   show_missing: true
   show_missing_assets: true
   save_report: false
   tvdb_language: eng
-  ignore_ids: []
-  ignore_imdb_ids: []
+  ignore_ids:
+  ignore_imdb_ids:
   item_refresh_delay: 0
-  playlist_sync_to_user: all
-  playlist_exclude_user: []
+  playlist_sync_to_users: all
+  playlist_exclude_users:
   playlist_report: false
-  verify_ssl: true
-  custom_repo: []
-  check_nightly: false
-  show_unconfigured: true
-  playlist_exclude_users: []
+  verify_ssl: false
   run_order:
     - operations
     - metadata
     - collections
     - overlays
+  custom_repo:
   overlay_artwork_filetype: jpg
-  overlay_artwork_quality: 100
-libraries:
-  TV:
-    plex:
-      url: http://192.168.1.11:32400
-      token: Placeholder
-      timeout: 60
-      clean_bundles: true
-      empty_trash: true
-      optimize: true
-      db_cache: 4096
-      verify_ssl: false
-  Movies:
-    plex:
-      url: http://192.168.1.11:32400
-      token: Placeholder
-      timeout: 60
-      clean_bundles: true
-      empty_trash: true
-      optimize: true
-      db_cache: 4096
-      verify_ssl: false
-  Anime:
-    plex:
-      url: http://192.168.1.11:32400
-      token: Placeholder
-      timeout: 60
-      clean_bundles: true
-      empty_trash: true
-      optimize: true
-      db_cache: 4096
-      verify_ssl: false
+  overlay_artwork_quality: 75
+webhooks:                            # Can be individually specified per library as well
+  error:
+  version:
+  run_start:
+  run_end:
+  changes:
+plex:                       # Can be individually specified per library as well
+  url: http://192.168.1.11:32400
+  token: PLACEHOLDER
+  timeout: 60
+  dbcache:
+  clean_bundles: true
+  empty_trash: true
+  optimize: false
+  verify_ssl:
 tmdb:
-  apikey: Placeholder
+  apikey: PLACEHOLDER
   language: en
-  cache_expiration: 60
-  region:
-tautulli:
-  url: http://192.168.1.50:1123/
-  apikey: Placeholder
-radarr:
-  url: http://192.168.1.50:1119/
-  token: Placeholder
-  version: v3
+tautulli:                   # Can be individually specified per library as well
+  url: http://192.168.1.50:1123
+  apikey: PLACEHOLDER
+radarr:                     # Can be individually specified per library as well
+  url: http://192.168.1.50:1119
+  token: PLACEHOLDER
   add_missing: true
+  add_existing: false
+  upgrade_existing: false
+  monitor_existing: false
   root_folder_path: /Data/plex/movies
   monitor: true
-  availability: released
+  availability: announced
   quality_profile: Remux + WEB 1080p
   tag:
   search: true
-  add_existing: false
-  upgrade_existing: true
   radarr_path:
   plex_path:
-  ignore_cache: false
-  monitor_existing: false
-sonarr:
-  url: http://192.168.1.50:1121/
-  token: Placeholder
-  version: v4
+sonarr:                      # Can be individually specified per library as well
+  url: http://192.168.1.50:1121
+  token: PLACEHOLDER
   add_missing: true
-  root_folder_path: /Data/plex/shows
+  add_existing: false
+  upgrade_existing: false
+  monitor_existing: false
+  root_folder_path:
   monitor: all
   quality_profile: WEB-1080p
   language_profile: English
   series_type: standard
   season_folder: true
-  tag: series
+  tag:
   search: true
   cutoff_search: false
-  add_existing: false
-  upgrade_existing: true
   sonarr_path:
   plex_path:
-  ignore_cache: false
-  monitor_existing: false
-  # Add an additional section for Anime
-  anime:
-    quality_profile: Remux-1080p - Anime
-    root_folder_path: /Data/plex/anime
-    language_profile: dual_audio
-    series_type: anime
-    season_folder: true
-    search: true
-    monitor: true
-    upgrade_existing: true
-    ignore_cache: false
-
 mal:
-  client_id: Placeholder
-  client_secret: Placeholder
-  localhost_url: Placeholder
+  client_id: PLACEHOLDER
+  client_secret: PLACEHOLDER
+  localhost_url: PLACEHOLDER
   authorization:
-    access_token: Placeholder
+    access_token: PLACEHOLDER
     token_type: Bearer
     expires_in: 2682000
-    refresh_token: Placeholder
-  cache_expiration: 60
+    refresh_token: PLACEHOLDER
 trakt:
-  client_id: Placeholder
-  client_secret: Placeholder
+  client_id: PLACEHOLDER
+  client_secret: PLACEHOLDER
 # Everything below this line is automatically generated
   authorization:
-    access_token: Placeholder
+    access_token: PLACEHOLDER
     token_type: Bearer
     expires_in: 7889238
-    refresh_token: Placeholder
+    refresh_token: PLACEHOLDER
     scope: public
     created_at: 1732183221
   upgrade_existing: true
